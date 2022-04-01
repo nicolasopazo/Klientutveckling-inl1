@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Moonway</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="kontakt">
+        <div id="navbar" class="navbar">
+            <h1 class="logo">
+                <span class="text-primary"><i class="fas fa-moon" style="font-size:40px;"></i>MOON</span>WAY
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="omoss.html">Om</a></li>
+                    <li><a href="referenser.html">Referenser</a></li>
+                    <li><a class="active" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="solutions flex-columns flex-reverse">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="bilder/office.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div class="column">
+                    <div class="column-2 bg-secondary">
+                        <h4>Hör av dig till oss om du är intresserad av att boka en resa.</h4>
+                        <h2>Besök oss på vårt kontor.
+                        </h2>
+                        <p>Adressen till vårt kontor är regnbågsvägen 53.
+                            Eller ring till oss på telefon nr. 0381-123456.
+                            Du kan fylla i dina uppgifter och önskemål nedan så hör vi av oss till dig.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1 bg-primary">
+                        <img src="bilder/dimma.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-2 bg-light">
+                        <h2>Fyll i formuläret för att kontakta oss.</h2>
+                        <br>
+                        <form action="/action_page.php">
+                            <label for="namn">Namn</label>
+                            <input type="text" id="namn" name="namn" placeholder="För och efternamn">
+
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="email">
+
+                            <label for="subject">Ämne</label>
+                            <select id="subject" name="subject">
+                                <option value="buy">Köp av tjänst</option>
+                                <option value="question">Allmäna fråga</option>
+                                <option value="ask">Synpunkter eller klagomål</option>
+                            </select>
+
+                            <form>
+                                <textarea>Skriv din text här</textarea>
+                            </form>
+
+                            <input type="Skicka" value="Skicka">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2022 - Moonway</p>
+    </footer>
+</body>
+
+</html>

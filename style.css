@@ -1,0 +1,413 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #2d2c30;
+  color: #2d2c30;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #2d2c30;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/*--navbar--*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c6c6c6;
+  color: #000;
+  opacity: 1;
+  width: 100%;
+  height: 57px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  z-index: 10;
+}
+
+.navbar a {
+  background: #c6c6c6;
+  color: #000;
+  padding: 10px 20px;
+  margin: 0 3px;
+  border-radius: 5px;
+}
+
+.navbar a.active {
+  color: #d5f98c;
+  border: #d5f98c 2px solid;
+}
+
+.navbar a:hover {
+  color: #000;
+
+  background: #d5f98c;
+  border-radius: 5px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo {
+  font-weight: 400;
+}
+
+
+/*--heder--*/
+
+.home {
+  background: url('bilder/renardark.jpg') no-repeat center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+
+
+.referenser {
+  top: 57px;
+  background: url('bilder/bergbakomdark.jpg') no-repeat center/cover;
+  height: 40vh;
+  position: relative;
+  color: #fff;
+
+}
+
+.omoss {
+  margin-top: 57px;
+}
+
+
+
+.home .content,
+.referenser .content,
+.kontakt .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.home .content h1 {
+  font-size: 55px;
+}
+
+.home .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+
+
+/*--icons--*/
+
+.icons {
+  position: relative;
+  padding: 30px;
+
+}
+
+.icons h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i {
+  background-color: #d5f98c;
+  color: #000;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team img {
+  border-radius: 5%;
+}
+
+/* --kontakt form-- */
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #d5f98c;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=Skicka] {
+  width: 100%;
+  background-color: #d5f98c;
+  color: #000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=Skicka]:hover {
+  background-color: #d5f98c;
+}
+
+.kontakt-form div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #d5f98c;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  resize: none;
+}
+
+/*--Footer--*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer a {
+  color: #fafafa;
+}
+
+.footer a:hover {
+  color: #d5f98c;
+}
+
+.footer .social>* {
+  margin-right: 30px;
+
+}
+
+/*--------------------------------------------*/
+
+/* --Text color--*/
+
+.text-primary {
+  color: #d5f98c;
+}
+
+
+/* --knappar-- */
+.knapp {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #000;
+  background-color: #d5f98c;
+  border: none;
+  border-radius: 5px;
+}
+
+.knapp:hover {
+  opacity: 0.8;
+}
+
+.knapp-primary,
+.bg-primary {
+  background: #d5f98c;
+  color: #000;
+}
+
+.knapp-secondary,
+.bg-secondary {
+  background: #677943;
+  color: #f0f0f0;
+}
+
+.knapp-dark,
+.bg-dark {
+  background: #2d2c30;
+  color: #fafafa;
+}
+
+.knapp-light,
+.bg-light {
+  background: #c6c6c6;
+  color: #2d2c30;
+}
+
+.knapp-outline-dark {
+  background: transparent;
+  border: 1px solid black;
+}
+
+.knapp-outline-light {
+  background: transparent;
+  border: 1px solid white;
+}
+
+/*--flex items--*/
+
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-items>div {
+  padding: 20px;
+}
+
+/*--flex column--*/
+
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+}
+
+.flex-columns p {
+  margin: 20px;
+}
+
+/* --Section header-- */
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/*--flex grid--*/
+
+.flex-grid .row {
+  display: flex;
+  flex: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+
+/*--Mobil--*/
+@media(max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .team img {
+    width: 70%;
+  }
+
+}
